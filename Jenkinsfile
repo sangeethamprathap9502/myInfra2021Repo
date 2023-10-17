@@ -23,7 +23,7 @@ pipeline {
         stage (" Action") {
             steps {
                 echo "Terraform action is --> ${action}"
-                sh ('terraform ${action} -lock=false') 
+                sh ('terraform ${action}  --auto-approve -lock=false') 
            }
         }
     }
