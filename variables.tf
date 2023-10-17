@@ -10,7 +10,7 @@ variable "key_name" {
 
 variable "instance_type" { 
     description = "instance type for ec2" 
-    default     =  "t3.micro" 
+    default     =  "t3.large" 
 }
 
 variable "security_group" { 
